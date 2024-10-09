@@ -12,10 +12,15 @@
 		1671B15B1DE8CBA100ED5239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1671B1591DE8CBA100ED5239 /* Main.storyboard */; };
 		1671B15D1DE8CBA100ED5239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1671B15C1DE8CBA100ED5239 /* Assets.xcassets */; };
 		1671B1601DE8CBA100ED5239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1671B15E1DE8CBA100ED5239 /* LaunchScreen.storyboard */; };
+		63A81D4D2C7F591600473D6C /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A81D4C2C7F591600473D6C /* Layer.swift */; };
+		63A81D4F2C7F648700473D6C /* LayeredImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A81D4E2C7F648700473D6C /* LayeredImageView.swift */; };
+		63C5C3992C806CD600AC2F91 /* Chartlet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C5C3982C806CD600AC2F91 /* Chartlet.swift */; };
+		63C5C39B2C806FE900AC2F91 /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C5C39A2C806FE900AC2F91 /* MathUtils.swift */; };
 		882DC28322202B8A00B03866 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882DC28222202B8A00B03866 /* Extensions.swift */; };
 		88AF845922677ABC0070277F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AF845822677ABC0070277F /* Color.swift */; };
 		94CEF9EF2168F8350036EF15 /* SwiftyDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CEF9ED2168F8350036EF15 /* SwiftyDraw.swift */; };
 		94CEF9F02168F8350036EF15 /* Brush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CEF9EE2168F8350036EF15 /* Brush.swift */; };
+		E35531605E6C5D9AF36EEDC1 /* Pods_SwiftyDrawExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB1AEAFF7CCD6DC8287E367 /* Pods_SwiftyDrawExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +31,15 @@
 		1671B15C1DE8CBA100ED5239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1671B15F1DE8CBA100ED5239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1671B1611DE8CBA100ED5239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A81D4C2C7F591600473D6C /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		63A81D4E2C7F648700473D6C /* LayeredImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayeredImageView.swift; sourceTree = "<group>"; };
+		63C5C3982C806CD600AC2F91 /* Chartlet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chartlet.swift; sourceTree = "<group>"; };
+		63C5C39A2C806FE900AC2F91 /* MathUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
+		6ED0977D5A1A86F84A8039D7 /* Pods-SwiftyDrawExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyDrawExample.release.xcconfig"; path = "Target Support Files/Pods-SwiftyDrawExample/Pods-SwiftyDrawExample.release.xcconfig"; sourceTree = "<group>"; };
+		7CB1AEAFF7CCD6DC8287E367 /* Pods_SwiftyDrawExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyDrawExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		882DC28222202B8A00B03866 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		88AF845822677ABC0070277F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		8A2BD056E5DE449865C66175 /* Pods-SwiftyDrawExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyDrawExample.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyDrawExample/Pods-SwiftyDrawExample.debug.xcconfig"; sourceTree = "<group>"; };
 		94CEF9ED2168F8350036EF15 /* SwiftyDraw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyDraw.swift; sourceTree = "<group>"; };
 		94CEF9EE2168F8350036EF15 /* Brush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brush.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,18 +49,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35531605E6C5D9AF36EEDC1 /* Pods_SwiftyDrawExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C41028298966799084F3404 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A2BD056E5DE449865C66175 /* Pods-SwiftyDrawExample.debug.xcconfig */,
+				6ED0977D5A1A86F84A8039D7 /* Pods-SwiftyDrawExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1671B1491DE8CBA100ED5239 = {
 			isa = PBXGroup;
 			children = (
 				1671B1541DE8CBA100ED5239 /* SwiftyDrawExample */,
 				94CEF9EC2168F8350036EF15 /* Source */,
 				1671B1531DE8CBA100ED5239 /* Products */,
+				0C41028298966799084F3404 /* Pods */,
+				FD3C6A02C4E2E27D616F57AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,9 +104,21 @@
 				94CEF9ED2168F8350036EF15 /* SwiftyDraw.swift */,
 				88AF845822677ABC0070277F /* Color.swift */,
 				94CEF9EE2168F8350036EF15 /* Brush.swift */,
+				63A81D4C2C7F591600473D6C /* Layer.swift */,
+				63A81D4E2C7F648700473D6C /* LayeredImageView.swift */,
+				63C5C3982C806CD600AC2F91 /* Chartlet.swift */,
+				63C5C39A2C806FE900AC2F91 /* MathUtils.swift */,
 			);
 			name = Source;
 			path = ../Source;
+			sourceTree = "<group>";
+		};
+		FD3C6A02C4E2E27D616F57AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CB1AEAFF7CCD6DC8287E367 /* Pods_SwiftyDrawExample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1671B1641DE8CBA100ED5239 /* Build configuration list for PBXNativeTarget "SwiftyDrawExample" */;
 			buildPhases = (
+				2056952A677282C9E60EA3A0 /* [CP] Check Pods Manifest.lock */,
 				1671B14E1DE8CBA100ED5239 /* Sources */,
 				1671B14F1DE8CBA100ED5239 /* Frameworks */,
 				1671B1501DE8CBA100ED5239 /* Resources */,
+				BF017340CFDB07B0BAD1F604 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -117,7 +155,7 @@
 				TargetAttributes = {
 					1671B1511DE8CBA100ED5239 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 578YR5HPG3;
+						DevelopmentTeam = 5WVVZV66NE;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -154,6 +192,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2056952A677282C9E60EA3A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyDrawExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF017340CFDB07B0BAD1F604 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftyDrawExample/Pods-SwiftyDrawExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftyDrawExample/Pods-SwiftyDrawExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1671B14E1DE8CBA100ED5239 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -162,9 +243,13 @@
 				94CEF9F02168F8350036EF15 /* Brush.swift in Sources */,
 				882DC28322202B8A00B03866 /* Extensions.swift in Sources */,
 				94CEF9EF2168F8350036EF15 /* SwiftyDraw.swift in Sources */,
+				63A81D4D2C7F591600473D6C /* Layer.swift in Sources */,
 				1671B1581DE8CBA100ED5239 /* ViewController.swift in Sources */,
+				63A81D4F2C7F648700473D6C /* LayeredImageView.swift in Sources */,
 				1671B1561DE8CBA100ED5239 /* AppDelegate.swift in Sources */,
 				88AF845922677ABC0070277F /* Color.swift in Sources */,
+				63C5C3992C806CD600AC2F91 /* Chartlet.swift in Sources */,
+				63C5C39B2C806FE900AC2F91 /* MathUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,13 +386,14 @@
 		};
 		1671B1651DE8CBA100ED5239 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2BD056E5DE449865C66175 /* Pods-SwiftyDrawExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 578YR5HPG3;
+				DEVELOPMENT_TEAM = 5WVVZV66NE;
 				INFOPLIST_FILE = SwiftyDrawExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.linus-geffarth.SwiftyDrawExample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linus-geffarth.SwiftyDrawExample2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,13 +402,14 @@
 		};
 		1671B1661DE8CBA100ED5239 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ED0977D5A1A86F84A8039D7 /* Pods-SwiftyDrawExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 578YR5HPG3;
+				DEVELOPMENT_TEAM = 5WVVZV66NE;
 				INFOPLIST_FILE = SwiftyDrawExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.linus-geffarth.SwiftyDrawExample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linus-geffarth.SwiftyDrawExample2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

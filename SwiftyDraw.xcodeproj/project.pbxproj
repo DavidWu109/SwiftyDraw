@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E3BF56CC903AA6CC65305E5 /* Pods_SwiftyDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95D13B123B02951B23D09AC /* Pods_SwiftyDraw.framework */; };
 		6297C0F6240FBBE3008DBC24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6297C0F5240FBBE3008DBC24 /* Color.swift */; };
 		DA81B079220BEA1B008184FF /* SwiftyDraw.h in Headers */ = {isa = PBXBuildFile; fileRef = DA81B077220BEA1B008184FF /* SwiftyDraw.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA81B07D220BEA28008184FF /* SwiftyDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA81B06D220BE9C8008184FF /* SwiftyDraw.swift */; };
@@ -15,11 +16,14 @@
 
 /* Begin PBXFileReference section */
 		6297C0F5240FBBE3008DBC24 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		746DABCACB3355AEFCB4F107 /* Pods-SwiftyDraw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyDraw.release.xcconfig"; path = "Target Support Files/Pods-SwiftyDraw/Pods-SwiftyDraw.release.xcconfig"; sourceTree = "<group>"; };
+		D95D13B123B02951B23D09AC /* Pods_SwiftyDraw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyDraw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA81B06D220BE9C8008184FF /* SwiftyDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyDraw.swift; sourceTree = "<group>"; };
 		DA81B06E220BE9C8008184FF /* Brush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brush.swift; sourceTree = "<group>"; };
 		DA81B074220BEA1B008184FF /* SwiftyDraw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyDraw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA81B077220BEA1B008184FF /* SwiftyDraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyDraw.h; sourceTree = "<group>"; };
 		DA81B078220BEA1B008184FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE42C0F734EAB3454E0B7A3C /* Pods-SwiftyDraw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyDraw.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyDraw/Pods-SwiftyDraw.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,18 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3BF56CC903AA6CC65305E5 /* Pods_SwiftyDraw.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58B3E3CC2E286570E1D69284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D95D13B123B02951B23D09AC /* Pods_SwiftyDraw.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA81B062220BE9A6008184FF = {
 			isa = PBXGroup;
 			children = (
 				DA81B06C220BE9C8008184FF /* Source */,
 				DA81B076220BEA1B008184FF /* SwiftyDraw */,
 				DA81B075220BEA1B008184FF /* Products */,
+				EE5E7DB5D307AB0D912248AB /* Pods */,
+				58B3E3CC2E286570E1D69284 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +84,16 @@
 			path = SwiftyDraw;
 			sourceTree = "<group>";
 		};
+		EE5E7DB5D307AB0D912248AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE42C0F734EAB3454E0B7A3C /* Pods-SwiftyDraw.debug.xcconfig */,
+				746DABCACB3355AEFCB4F107 /* Pods-SwiftyDraw.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -87,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA81B07A220BEA1B008184FF /* Build configuration list for PBXNativeTarget "SwiftyDraw" */;
 			buildPhases = (
+				B887E6B6D8CBAE70F27B158E /* [CP] Check Pods Manifest.lock */,
 				DA81B06F220BEA1B008184FF /* Headers */,
 				DA81B070220BEA1B008184FF /* Sources */,
 				DA81B071220BEA1B008184FF /* Frameworks */,
@@ -141,6 +167,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B887E6B6D8CBAE70F27B158E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyDraw-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA81B070220BEA1B008184FF /* Sources */ = {
@@ -222,6 +273,7 @@
 		};
 		DA81B07B220BEA1B008184FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE42C0F734EAB3454E0B7A3C /* Pods-SwiftyDraw.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -303,6 +355,7 @@
 		};
 		DA81B07C220BEA1B008184FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 746DABCACB3355AEFCB4F107 /* Pods-SwiftyDraw.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
